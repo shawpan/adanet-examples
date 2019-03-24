@@ -1,0 +1,57 @@
+{
+  "ps": {
+    "task": {
+      "type": "ps",
+      "index": 0
+    },
+    "cluster": {
+      "chief": ["localhost:2222"],
+      "worker": ["localhost:2223", "localhost:2224"],
+      "ps": ["localhost:2225"]
+    }
+  },
+  "chief": {
+    "task": {
+      "type": "chief",
+      "index": 0
+    },
+    "cluster": {
+      "chief": ["localhost:2222"],
+      "worker": ["localhost:2223", "localhost:2224"],
+      "ps": ["localhost:2225"]
+    }
+  },
+  "worker0": {
+    "task": {
+      "type": "worker",
+      "index": 0
+    },
+    "cluster": {
+      "chief": ["localhost:2222"],
+      "worker": ["localhost:2223", "localhost:2224"],
+      "ps": ["localhost:2225"]
+    }
+  },
+  "worker1": {
+    "task": {
+      "type": "worker",
+      "index": 1
+    },
+    "cluster": {
+      "chief": ["localhost:2222"],
+      "worker": ["localhost:2223", "localhost:2224"],
+      "ps": ["localhost:2225"]
+    }
+  },
+  "evaluator": {
+    "task": {
+      "type": "evaluator",
+      "index": 0
+    },
+    "cluster": {
+      "chief": ["localhost:2222"],
+      "worker": ["localhost:2223", "localhost:2224"],
+      "ps": ["localhost:2225"]
+    }
+  }
+}
